@@ -1,0 +1,79 @@
+{
+  "name": "react-redux-boilerplate",
+  "version": "1.0.0",
+  "description": "Simple boilerplate with webpack and babel config to get you started with react redux quick",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest",
+    "start": "babel-node -- server/server.js",
+    "start:dev": "npm run build:dev & nodemon --watch server --exec babel-node -- server/server.js",
+    "dev": "webpack && webpack-dev-server --config webpack.config.js --progress --inline --colors",
+    "build:dev": "webpack --config webpack.dev.js --watch",
+    "build:prod": "webpack --config webpack.prod.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Boluwatifes/react-redux-boilerplate.git"
+  },
+  "keywords": [
+    "redux",
+    "react",
+    "boiler-plate",
+    "bamidele",
+    "daniel"
+  ],
+  "author": "Bamidele Daniel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Boluwatifes/react-redux-boilerplate/issues"
+  },
+  "homepage": "https://github.com/Boluwatifes/react-redux-boilerplate#readme",
+  "dependencies": {
+    "autoprefixer": "^7.1.5",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "body-parser": "^1.18.2",
+    "clean-webpack-plugin": "^0.1.17",
+    "css-loader": "^0.28.7",
+    "eventsource-polyfill": "^0.9.6",
+    "express": "^4.16.2",
+    "extract-text-webpack-plugin": "^3.0.1",
+    "file-loader": "^1.1.5",
+    "font-awesome-loader": "^1.0.2",
+    "image-webpack-loader": "^3.4.2",
+    "imports-loader": "^0.7.1",
+    "json-loader": "^0.5.7",
+    "node-sass": "^4.5.3",
+    "popper.js": "^1.12.5",
+    "postcss-loader": "^2.0.8",
+    "precss": "^2.0.0",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-redux": "^5.0.6",
+    "react-router-dom": "^4.2.2",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.19.0",
+    "tether": "^1.4.0",
+    "transfer-webpack-plugin": "^0.1.4",
+    "uglifyjs-webpack-plugin": "^1.0.0-beta.3",
+    "url-loader": "^0.6.2",
+    "webpack": "^3.8.1",
+    "webpack-dev-middleware": "^1.12.0",
+    "webpack-hot-middleware": "^2.20.0",
+    "webpack-merge": "^4.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.9.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.4.0",
+    "nodemon": "^1.12.1"
+  }
+}
